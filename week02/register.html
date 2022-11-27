@@ -1,0 +1,38 @@
+<body>
+
+    <form action="#" method="post" name="myform">
+        <biv>ชื่อผู้ใช้งาน :<input type="text" name="Firsname" id=""></biv>
+        <biv>นามสกุล :<input type="text" name="Lastname" id=""></biv>
+    </form>
+    
+    
+    <tr>
+    <td>เพศ</td>
+    <td><select name="sex" size="1">
+    <option value="1" selected>ไม่ระบุ</option>
+    <option value="2">ชาย</option>
+    <option value="3">หญิง</option>
+    </select>    </td>
+    </tr>
+<br><br>
+    <FORM Name="อัพโหลดเอกสาร" ENCTYPE="multipart/form-data" ACTION="upload.php" METHOD="post">
+        อัพโหลดเอกสาร: <INPUT TYPE="file" NAME="userfile">
+     </FORM>   
+        
+     <form action="<?=$_SERVER['PHP_SELF'];?>" method="POST">
+        อีเมล <input type="email" name="email" oninvalid="this.setCustomValidity('กรุณากรอกอีเมลให้ถูกต้อง')" required>
+        <input type="submit">
+        </form>  
+    
+        <form action="action_page.php">
+            วันเกิด:
+            <input type="date" name="bday">
+            <input type="submit">
+          </form>
+        
+          
+          <div class="container">
+            GPAX <input type="number">
+            <br><br>
+            <input type="button" value="บันทึก">
+</body>
